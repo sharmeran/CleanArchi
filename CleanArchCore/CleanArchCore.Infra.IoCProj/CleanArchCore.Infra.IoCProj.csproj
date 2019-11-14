@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchCore.Core\CleanArchCore.Core.csproj" />
+    <ProjectReference Include="..\CleanArchCore.Infra.DataAccess\CleanArchCore.Infra.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
