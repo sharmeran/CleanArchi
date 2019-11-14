@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchCore.Infra.IoC", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchCore.Infra.Data", "CleanArchCore.Infra.Data", "{507DBE12-7C01-4DAB-A357-7A9157420F0A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchCore.UI.MVC", "CleanArchCore.UI.MVC", "{EC513022-3E77-497A-B253-047E7173D934}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchCore.Presentation", "CleanArchCore.Presentation", "{EC513022-3E77-497A-B253-047E7173D934}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchCore.MVC", "CleanArchCore.MVC\CleanArchCore.MVC.csproj", "{7DE94EA8-37EA-4CCD-9E7B-3674F38F8AC6}"
 EndProject
