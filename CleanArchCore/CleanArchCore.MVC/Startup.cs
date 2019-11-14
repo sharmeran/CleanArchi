@@ -12,6 +12,7 @@ using CleanArchCore.MVC.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CleanArchCore.Infra.DataAccess.Context;
 
 namespace CleanArchCore.MVC
 {
@@ -32,6 +33,14 @@ namespace CleanArchCore.MVC
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            services.AddDbContext<UniversityDBContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ProjectDatabaseConnection"));
+            });
+
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
